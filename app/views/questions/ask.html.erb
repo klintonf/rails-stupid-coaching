@@ -1,0 +1,23 @@
+<main class="coach-page ask-page py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+        <div class="coach-card p-4 p-sm-5">
+          <div class="text-center mb-4">
+            <p class="text-uppercase text-primary fw-semibold small mb-2">Stupid coaching</p>
+            <h1 class="display-6 mb-2">Ask your coach anything</h1>
+            <p class="text-muted mb-0">Type a question below and the coach will answer right away.</p>
+          </div>
+
+          <form action="<%= answer_path %>" method="get" data-turbo="false" class="ask-form">
+            <label for="question" class="form-label">Your question</label>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <input type="text" id="question" name="question" class="form-control form-control-lg" placeholder="E.g. Can I leave early today?" required>
+              <input type="submit" value="Ask!" class="btn btn-primary btn-lg px-4 flex-shrink-0">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
